@@ -8,3 +8,13 @@ const placesToTravel = [{ id: 5, name: 'Japan' },
     { id: 40, name: 'Santander' },
     { id: 44, name: 'Filipinas' },
     { id: 59, name: 'Madagascar' }]
+traveledplaces =[]
+for (let i = 0; i < placesToTravel.length; i++) {
+    const element = placesToTravel[i];
+    if (element.id == 11 || element.id == 40) {
+        traveledplaces.push(element)
+        placesToTravel.splice(element,1)
+    }
+}
+console.log(traveledplaces);
+console.log(placesToTravel);
