@@ -11,7 +11,7 @@ const toys = [
 ]
 const toysSingato=[]
 for (const toy of toys) {
-    if (toy.name.includes("gato")== false) {
+    if (toy.name.toUpperCase().includes("gato")== false) {
         toysSingato.push(toy)
         //console.log(toy);
     }
