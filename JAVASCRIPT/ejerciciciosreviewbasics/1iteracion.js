@@ -22,3 +22,7 @@ for (const movie of movies) {
   }
 }
 console.log(categorias.sort());
+// aqui cambiariamos la letra seleccionada por nada
+function removeExclamationMarks(s) {
+  return s.split("!").join("");
+}

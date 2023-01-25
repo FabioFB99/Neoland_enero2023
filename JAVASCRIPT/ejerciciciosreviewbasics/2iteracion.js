@@ -43,4 +43,14 @@ for (const user of users) {
     cont++;
   }
 }
+// codewars soluciones
 console.log(volumentotal / cont);
+for (let i = 0; i < array.length; i++) {
+  const element = array[i];
+}
+
+function reverseWords(str) {
+  return str.split(" ").reverse().join(" "); // reverse those words
+}
+// si lo queremos hacer a prueba de bomba le ponemos trim() para que elimine el primer espacio si es un espacio
+//str.trim().split(" ").reverse().join(" ")

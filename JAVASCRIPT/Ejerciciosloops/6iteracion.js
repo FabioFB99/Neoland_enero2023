@@ -11,7 +11,8 @@ const toys = [
 ]
 const toysSingato=[]
 for (const toy of toys) {
-    if (toy.name.toUpperCase().includes("gato")== false) {
+    // con el toUppercase filtramos para que se pueda buscar en todo el texto y este en minusculas y mayusculas
+    if (toy.name.toUpperCase().includes("GATO")== false) {
         toysSingato.push(toy)
         //console.log(toy);
     }
