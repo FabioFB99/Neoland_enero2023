@@ -1,0 +1,26 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.box{
+    width: 200px;
+    border: 2px solid black;
+    height: 200px;
+    background-color: darkmagenta;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    justify-content: center;
+    border: 1px solid magenta;
+    align-items: center;
+    min-height: 30vh;
+    gap:1rem ;/* meter un hueco entre cada uno de los elementos */ 
+    flex-wrap: wrap; /* esto hace que si no cabe en vez de petar se responda y se baje */
+}

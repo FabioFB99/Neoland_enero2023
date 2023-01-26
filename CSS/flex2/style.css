@@ -1,0 +1,21 @@
+.box{
+        width: 200px;
+        border: 2px solid black;
+        height: 200px;
+        background-color: darkmagenta;
+        font-size: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.container{
+    display: flex;
+    width: 60vh;
+    height: 40vh;
+    border: 2px solid greenyellow;
+    align-items: center;
+}
+.box1{
+    order: 3;
+    
+}

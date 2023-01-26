@@ -23,6 +23,7 @@ document.body.appendChild(nuevoParrafo);
 nuevoParrafo.appendChild(textoParrafo);
 /*2.5 Inserta en el h2 con la clase .fn-insert-here el texto 'Wubba Lubba dub dub'.*/
 let hdos = document.querySelector(`h2[fn-insert-here]`);
+//document.querySelectorAll('[data-function="testMe"]')
 const texto = "Wubba Lubba dub dub";
 console.log(hdos);
 hdos.appendChild(texto);
