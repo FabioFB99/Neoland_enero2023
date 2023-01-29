@@ -12,12 +12,13 @@ console.log(). Para ello, es necesario que crees un .html y un .js.*/
 fetch() para hacer una consulta a la api cuando se haga click en el botón, 
 pasando como parametro de la api, el valor del input.
 const baseUrl = 'https://api.nationalize.io';*/
-const namee = "juan";
-const baseUrl = `https://api.nationalize.io?name=${namee}`;
+/* const namee = document.querySelector("#textoo").value; */
+//const namee = "juan";
+const baseUrl = `https://api.nationalize.io?name=`;
 const btn = document.querySelector("#btn");
 
-async function obtenerDatos() {
-  const respuesta = await fetch(baseUrl);
+async function obtenerDatos(namee) {
+  const respuesta = await fetch(baseUrl + `${namee}`);
   const datosasecas = await respuesta.json();
   const datos = datosasecas.country;
   console.log(mapCountries(datos));
@@ -36,8 +37,10 @@ const printCountries = (datos) => {
     console.log(dato);
   }
 };
+btn.addEventListener("click", () => {
+  obtenerDatos(document.querySelector("#textoo").value);
+});
 
-obtenerDatos();
 /*1.3 En base al ejercicio anterior. Crea dinamicamente un elemento  por cada petición 
 a la api que diga...'El nombre X tiene un Y porciento de ser de Z' etc etc.
 EJ: El nombre Pepe tiene un 22 porciento de ser de ET y un 6 porciento de ser 
